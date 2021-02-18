@@ -1,31 +1,31 @@
 var s = skrollr.init();
 
-var works=[
+var works = [
   {
     name: "網頁_進擊的巨人",
     introduction: "應用bootstrap-結合skrollr製作捲動式網頁",
-    work_link: "https://codepen.io/lyccccc/pen/GbzaNg",
-    work_img: "https://i.screenshot.net/gd7lrbq"
+    work_link: "https://codepen.io/lyccccc/full/GbzaNg",
+    work_img: "https://i.imgur.com/qZi6bgf.jpg"
   },{
     name: "$$流動清單",
     introduction: "動態新增花費金額和結算",
-    work_link: "https://codepen.io/lyccccc/pen/QXZKyv",
-    work_img: "https://i.screenshot.net/grl28s4"
+    work_link: "https://codepen.io/lyccccc/full/QXZKyv",
+    work_img: "https://i.imgur.com/dGbVnya.png"
   },{
     name: "動態天氣盒",
     introduction: "CSS的應用",
-    work_link: "https://codepen.io/lyccccc/pen/ZdxMdL",
-    work_img: "https://i.screenshot.net/g86wpuw"
+    work_link: "https://codepen.io/lyccccc/full/ZdxMdL",
+    work_img: "https://i.imgur.com/3fn3QDh.png"
   },{
     name: "名片設計",
     introduction: "Pug/Sass練習",
-    work_link: "https://codepen.io/lyccccc/pen/gNoLVX",
-    work_img: "https://i.screenshot.net/g50vdin"
+    work_link: "https://codepen.io/lyccccc/full/gNoLVX",
+    work_img: "https://i.imgur.com/Ktvtwf6.png"
   },{
     name: "手機demo",
     introduction: "使用Jqyery切換class/css的應用",
-    work_link: "https://codepen.io/lyccccc/pen/QXaYOa",
-    work_img: "https://i.screenshot.net/g0pv1i4"
+    work_link: "https://codepen.io/lyccccc/full/bXePRp",
+    work_img: "https://i.imgur.com/jPVwc1u.png"
   }
 ]
   
@@ -81,21 +81,20 @@ window.onmousemove = function(evt){
   var smile_id = document.getElementById("smile");
   var smile_place = smile_id.offsetLeft + smile_id.offsetWidth/2;
   var smile_top = smile_id.offsetTop + document.querySelector(".row_smile").offsetTop;
-  
+
   //右下上
   if (x > smile_place + 80) //right
-    smile_id.setAttribute("src","https://i.screenshot.net/k6gvjc0");
+    smile_id.setAttribute("src","https://i.imgur.com/uNSj3RX.png");
   else if(x < smile_place - 80) //left
-    smile_id.setAttribute("src","https://i.screenshot.net/kqvrkt9");
+    smile_id.setAttribute("src","https://i.imgur.com/WshgFCU.png");
   else  //top
-    smile_id.setAttribute("src","https://i.screenshot.net/g3go9iw");
+    smile_id.setAttribute("src","https://i.imgur.com/0nb6S3i.png");
   // 左上 / 右上
   if(x < smile_place - 80 && y < smile_top) //lefttop
-    smile_id.setAttribute("src","https://i.screenshot.net/k41q8ax");
+    smile_id.setAttribute("src","https://i.imgur.com/EArrjfA.png");
   if(x > smile_place + 80 && y < smile_top) //righttop
-    smile_id.setAttribute("src","https://i.screenshot.net/k7p91s5");
-  
-  
+    smile_id.setAttribute("src","https://i.imgur.com/dIY9N5k.png");
+
   //浮動  
   document.querySelector(".r1text").style.transform = "translateX("+(-y/5)+"px)";
   document.querySelector(".r2text").style.transform = "translateX("+(-y/5)+"px)";
